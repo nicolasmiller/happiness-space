@@ -1,0 +1,16 @@
+{"parameters":
+	[
+		{
+			"name": "Parameter 1",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 42
+		},
+		{
+			"name": "Parameter 1",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 42
+		}
+	]
+}
