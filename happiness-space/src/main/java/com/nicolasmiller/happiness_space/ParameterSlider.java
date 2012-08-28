@@ -7,6 +7,7 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
@@ -17,10 +18,13 @@ public class ParameterSlider extends JPanel implements KeyListener {
 	private static final long serialVersionUID = 1L;
 	private JSlider slider;
 	private JTextField field;
+	private Parameter parameter;
 
-	public ParameterSlider(int sliderOrientation, int maximum) {
-		initializeSlider(sliderOrientation, maximum);
+	public ParameterSlider(int sliderOrientation, Parameter parameter) {
+		this.parameter = parameter;
+		initializeSlider(sliderOrientation, parameter.getMaximum());
 		initializeField();
+		this.add(new JLabel(parameter.getName()));
 	}
 
 	private void initializeSlider(int sliderOrientation, int maximum) {
@@ -28,7 +32,7 @@ public class ParameterSlider extends JPanel implements KeyListener {
 		slider.setOrientation(sliderOrientation);
 		slider.setMinimum(0);
 		slider.setMaximum(maximum);
-		slider.setValue(0);
+		slider.setValue(parameter.getValue());
 		slider.addMouseWheelListener(new MouseWheelListener() {
 			public void mouseWheelMoved(MouseWheelEvent e) {
 				JSlider slider = (JSlider) e.getComponent();
@@ -49,7 +53,7 @@ public class ParameterSlider extends JPanel implements KeyListener {
 
 	private void initializeField() {
 		field = new JTextField(3);
-		field.setText("0");
+		field.setText(Integer.toString(parameter.getValue()));
 		field.addKeyListener(this);
 		field.addFocusListener(new FocusListener() {
 			@Override

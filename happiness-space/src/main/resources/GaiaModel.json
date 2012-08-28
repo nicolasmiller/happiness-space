@@ -1,0 +1,52 @@
+{"parameters":
+	[
+		{
+			"name": "Filter Cutoff",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 3 
+		},
+		{
+			"name": "Filter Resonance",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 122
+		},
+		{
+			"name": "OSC 1 Freq",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 78 
+		},
+		{
+			"name": "OSC 1 Width",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 10 
+		},
+		{
+			"name": "OSC 1 Mod",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 9 
+		},
+		{
+			"name": "Parameter 7",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 78 
+		},
+		{
+			"name": "Parameter 8",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 4
+		},
+		{
+			"name": "Parameter 9",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 23 
+		}
+	]
+}
