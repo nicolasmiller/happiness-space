@@ -5,6 +5,7 @@ import javax.sound.midi.MidiDevice;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Receiver;
 import javax.sound.midi.ShortMessage;
+import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Transmitter;
 
 public class MidiCommunicator {
@@ -13,6 +14,7 @@ public class MidiCommunicator {
 	public MidiCommunicator() {
 		try {
 			printMidiDeviceInfo();
+			// blah blah need to generalize selecting midi device
 			MidiDevice.Info info = MidiSystem.getMidiDeviceInfo()[3];
 			MidiDevice presonus = MidiSystem.getMidiDevice(info);
 			presonus.open();
@@ -60,6 +62,16 @@ public class MidiCommunicator {
 			r.send(offMessage, -1);
 		} catch (Exception e) {
 			throw new RuntimeException(e.getMessage());
+		}
+	}
+
+	public void sendSysex(byte[] message) {
+		SysexMessage sysex = new SysexMessage();
+		try {
+			sysex.setMessage(message, message.length);
+			r.send(sysex, -1);
+		} catch (Exception e) {
+			new RuntimeException(e.getMessage());
 		}
 	}
 

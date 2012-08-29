@@ -26,8 +26,10 @@ public class HappinessSpace {
 	private JMenu menu;
 	private JMenuItem loadModel;
 	private SynthesizerModel model;
+	private MidiCommunicator midicomm;
 
 	public HappinessSpace() {
+		midicomm = new MidiCommunicator();
 		frame = new JFrame();
 		initDefaultView();
 		initMenu();
@@ -52,10 +54,18 @@ public class HappinessSpace {
 
 	private void initView() {
 		panel = new JPanel();
-		panel.setLayout(new GridLayout(6, 3));
+		panel.setLayout(new GridLayout(14, 3));
 		for (Parameter p : model.getParameters()) {
-			ParameterSlider slider = new ParameterSlider(JSlider.HORIZONTAL, p);
-			panel.add(slider);
+			if (p.hasValueNames()) {
+				ParameterComboBox box = new ParameterComboBox(p);
+				box.setMidiCommunicator(midicomm);
+				panel.add(box);
+			} else {
+				ParameterSlider slider = new ParameterSlider(
+						JSlider.HORIZONTAL, p);
+				slider.setMidiCommunicator(midicomm);
+				panel.add(slider);
+			}
 		}
 		initContentPane();
 	}

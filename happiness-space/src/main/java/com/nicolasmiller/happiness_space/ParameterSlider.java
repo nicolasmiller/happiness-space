@@ -19,6 +19,7 @@ public class ParameterSlider extends JPanel implements KeyListener {
 	private JSlider slider;
 	private JTextField field;
 	private Parameter parameter;
+	private MidiCommunicator midicomm;
 
 	public ParameterSlider(int sliderOrientation, Parameter parameter) {
 		this.parameter = parameter;
@@ -45,7 +46,9 @@ public class ParameterSlider extends JPanel implements KeyListener {
 		slider.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				Integer value = ((JSlider) e.getSource()).getValue();
+				parameter.setValue(value);
 				field.setText(value.toString());
+				midicomm.sendSysex(parameter.getSysexMessage());
 			}
 		});
 		this.add(slider);
@@ -108,5 +111,9 @@ public class ParameterSlider extends JPanel implements KeyListener {
 	@Override
 	public void keyReleased(KeyEvent e) {
 
+	}
+
+	public void setMidiCommunicator(MidiCommunicator midicomm) {
+		this.midicomm = midicomm;
 	}
 }

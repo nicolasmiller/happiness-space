@@ -1,16 +1,656 @@
-{"parameters":
+{
+	"name": "Dave Smith Evolver",
+	"parameters":
 	[
 		{
-			"name": "Parameter 1",
+			"name": "Osc 1 Freq",
 			"minimum": 0,
-			"maximum": 127,
-			"value": 42
+			"maximum": 120,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					0,
+					-1,
+					-1,
+					247
+				]
 		},
 		{
-			"name": "Parameter 1",
+			"name": "Osc 1 Fine Tune",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					1,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 1 Shape",
+			"minimum": 0,
+			"maximum": 102,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					2,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 1 Level",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					3,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 2 Freq",
+			"minimum": 0,
+			"maximum": 120,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					4,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 2 Fine",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					5,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 2 Shape",
+			"minimum": 0,
+			"maximum": 102,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					6,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 2 Level",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					7,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 3 Freq",
+			"minimum": 0,
+			"maximum": 120,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					8,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 3 Fine",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					9,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 3 Shape",
 			"minimum": 0,
 			"maximum": 127,
-			"value": 42
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					10,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 3 Level",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					11,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 4 Freq",
+			"minimum": 0,
+			"maximum": 120,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					12,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 4 Fine",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					13,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 4 Shape",
+			"minimum": 0,
+			"maximum": 127,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					14,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Osc 4 Level",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					15,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Freq",
+			"minimum": 0,
+			"maximum": 164,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					16,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Env Amt",
+			"minimum": 0,
+			"maximum": 198,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					17,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Env Attack",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					18,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Env Decay",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					19,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Env Sustain",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					20,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Env Release",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					21,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Resonance",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					22,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Filter Keyboard Amt",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					23,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Level",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					24,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Env Amt",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					25,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Env Attack",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					26,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Env Decay",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					27,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Env Sustain",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					28,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "VCA Env Release",
+			"minimum": 0,
+			"maximum": 110,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					29,
+					-1,
+					-1,
+					247
+				]
+		},
+		{
+			"name": "Output Pan",
+			"minimum": 0,
+			"maximum": 6,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					30,
+					-1,
+					-1,
+					247
+				],
+			"valueNames":
+				[
+					"Left fully left, right fully right",
+					"Left mostly left, right mostly right",
+					"Left somewhat left, right somewhat right",
+					"Mono",
+					"Right somewhat left, left somewhat right",	
+					"Right mostly left, left mostly right",
+					"Right fully left, left fully right"
+				]
+		},
+		{
+			"name": "Program Volume",
+			"minimum": 0,
+			"maximum": 100,
+			"value": 0,
+			"valueIndices": [6, 7],
+			"valueMode": "LSB_MSB",
+			"sysexMessage":
+				[
+					240,
+					1,
+					32,
+					1,
+					1,
+					31,
+					-1,
+					-1,
+					247
+				]
 		}
 	]
 }
