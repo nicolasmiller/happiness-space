@@ -5,4 +5,4 @@ Hardware synthesizer patch editor GUI and librarian. Synthesizer models specifie
 
 Will initially support the Dave Smith Evolver.
 
-APLHA
+ALPHA
