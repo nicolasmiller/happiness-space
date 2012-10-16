@@ -1,7 +1,7 @@
 Happiness Space
 ===============
 
-Hardware synthesizer patch editor GUI and librarian. Synthesizer models specified in straightforward JSON format.
+Hardware synthesizer patch editor GUI and librarian. Synthesizer models in JSON.
 
 Will initially support the Dave Smith Evolver.
 
